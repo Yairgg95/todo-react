@@ -46,7 +46,8 @@ export default function App() {
       {todos.length > 0 && todos.map((todo, idx) => {
         return <div key={`todo-${idx}`} className="bg-white/10 p-4 flex flex-row justify-between">
           <span className="select-none">{todo}</span>
-          <span className="text-red-500 cursor-pointer hover:bg-red-500 hover:text-white rounded-full p-1 size-5 text-center items-center" onClick={() => removeTodo(idx)}>x</span> {/*// colocando funcion anonima evitamos que se ejecute sola */}
+          <span className="text-red-500 cursor-pointer hover:bg-red-500 hover:text-white rounded-full p-1 size-5 flex text-center items-center" 
+          onClick={() => removeTodo(idx)}>x</span> {/*// colocando funcion anonima evitamos que se ejecute sola */}
           </div>
       })}
       </div>
